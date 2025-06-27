@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.pedido-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px 20px 40px;
+}
+
+.pedido-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+/* Card de cada pedido */
+.pedido-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease;
+}
+
+.pedido-card:hover {
+    transform: translateY(-5px);
+}
+
+.pedido-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.pedido-card strong {
+    color: #555;
+}
+
+/* Botão excluir estilizado */
+.botao-excluir {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.botao-excluir:hover {
+    background-color: #c0392b;
+}
+
+/* Botão voltar estilizado */
+.botao-voltar {
+    display: block;
+    max-width: 200px;
+    margin: 30px auto 0;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.botao-voltar:hover {
+    background-color: #217dbb;
+}

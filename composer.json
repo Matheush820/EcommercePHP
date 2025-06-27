@@ -1,0 +1,10 @@
+{
+    "name": "matheus/ecommerce",
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "Controllers/",
+            "Models\\": "Models/"
+        }
+    },
+    "require": {}
+}

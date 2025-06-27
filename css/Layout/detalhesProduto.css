@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 28px;
+    color: #333;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-content img {
+    width: 350px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.info-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.info-produto p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #444;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.botoes button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.botoes .carrinho {
+    background-color: #3498db;
+    color: white;
+}
+
+.botoes .carrinho:hover {
+    background-color: #2980b9;
+}
+
+.botoes .confirmar {
+    background-color: #27ae60;
+    color: white;
+}
+
+.botoes .confirmar:hover {
+    background-color: #1e874b;
+}
+
+.modal {
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo escuro translúcido */
+    display: none;
+    position: fixed;
+    z-index: 999;
+    inset: 0; /* substitui top, left, right, bottom */
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 24px 20px;
+    border-radius: 16px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeInModal 0.4s ease;
+}
+
+@keyframes fadeInModal {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.fechar {
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.fechar:hover {
+    background-color: #eee;
+}
